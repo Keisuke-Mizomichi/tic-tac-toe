@@ -1,8 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { MouseEventHandler, ReactElement } from 'react';
 import styled from 'styled-components';
 import Sign from '@/components/Sign';
 
 type Props = {
+  onClick: MouseEventHandler;
   sign: TicTacToe.Sign;
 };
 
@@ -16,7 +17,7 @@ const CustomTd = styled.td`
 
 export default function Cell(props: Props): ReactElement {
   return (
-    <CustomTd>
+    <CustomTd onClick={props.onClick}>
       <Sign sign={props.sign}></Sign>
     </CustomTd>
   );

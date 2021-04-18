@@ -1,3 +1,3 @@
 declare namespace TicTacToe {
-  type Sign = 1 | 0 | -1;
+  type Sign = 1 | 0 | -1 | number;
 }

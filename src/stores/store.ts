@@ -14,3 +14,5 @@ export class Store {
     this.table[row][column] = sign;
   }
 }
+
+export default new Store();
